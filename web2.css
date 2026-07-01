@@ -8,6 +8,8 @@ body{
 }
 .header{
     width: 100%;
+     position: fixed;
+    background-color: white;
 }
 .nav{
     display: flex;
@@ -20,6 +22,7 @@ body{
     /* background-color: aqua; */
     margin: auto;
     padding-top: 22px;
+   
 
 }
 .nav ul{
@@ -49,8 +52,10 @@ body{
 .maindiv{
     width: 75vw;
     margin: auto;
-    height: 90vh ;
+    height: 100vh ;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     flex-direction: row;
     box-sizing: border-box;
     /* background-color: red; */
@@ -63,9 +68,7 @@ body{
     height: 95vh;
     display: flex;
     flex-direction: column;
-    gap: 3px;
-    /* background-color: blue; */
-    /* font-size: 35px; */
+ 
 
 }
 .div1 h5{
@@ -75,13 +78,23 @@ body{
     /* margin-left: 10px; */
 }
 .div1 h1{
-    font-size: 4.5rem;
+    font-size: 4rem;
     /* margin-left: 110px; */
 }
 .div1 p{
     font-size: 11px;
     /* margin-left: 110px; */
     width: 50%;
+}
+.icon1{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.playbtn{
+    background-color: bisque;
+    padding: 1rem 1rem;
+    border-radius: 50%;
 }
 .icon1 button{
     background-color: orange;
@@ -94,18 +107,15 @@ body{
     /* margin-left: 110px; */
 }
  .img1{
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+ 
     
     width: 35%;
     height: 70vh;
     background-image: url(./media/girl.png);
-    margin-top: 75px;
-    margin-left: 250px;
-    /* border: 2px solid black; */
-
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
  }
  .page2{
     display: flex;
@@ -135,10 +145,7 @@ body{
     gap: 35px;
     margin-top: 30px;
     background-color: transparent;
-    padding-top: 35px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 25px;
+    padding: 1rem 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -155,38 +162,32 @@ body{
  }
  .card2 img{
     width: 65px;
-    margin-left: 5px;
-    margin-bottom: 20px;
+ 
  }
 .card{
     width:280px;
     background:#fff;
     border-radius:20px;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     gap: 8px;
 
     /* overflow:hidden; */
     /* box-shadow:0 10px 25px rgba(0,0,0,0.15); */
-    margin-right: 95px; 
 }
-.page3cards{
-    /* background-color: blue;6 */
-    width: 75vh;
-    margin: auto;
-}
+
 .card img{
-    width:16rem;
-    height:220px;
+    height: 30vh;
     
 }
 
 .card-content{
-    padding:20px;
+    /* padding:20px;
     display: flex;
     flex-direction: row;
     /* gap: 3200px; */
-    width: 15rem;
+    width: 15rem; */
 }
 
 .title{
@@ -226,6 +227,7 @@ body{
 .page3cards{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     /* gap: 14rem; */
     width: 75vw;
     margin: auto;
