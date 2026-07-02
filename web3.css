@@ -3,24 +3,263 @@
     margin: 0;
     box-sizing: border-box;
 }
-.parentdiv svg {
-    width: 300px;   /* or whatever size you want the blob to be */
-    height: 300px;
-    display: block;
+.parentdiv{
+    background-color: rgb(228, 226, 226);
+    width: 100%;
+    height: 100vh;
 }
-.parentdiv {
+.parentdiv svg {
+    width: 50%;   /* or whatever size you want the blob to be */
+    height: 90vh;
+    display: block;
+    object-fit: cover;
     position: relative;
-    width: 100%;   /* or however wide you want the section */
-    height: 150vh;
-    border: 2px solid black;
+    top: 4rem;
+    left: 15rem
+}
+.circle{
+    /* border: 2px solid black; */
+    width: 16vw;
+    height: 33vh;
+    border-radius: 50%;
+    position: absolute;
+    top: 6rem;
+    right: 25rem;
+    background-image: url(./media/dog.jfif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.circledes{
+    /* background-color: red; */
+    height: 37vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    position: absolute;
+    top: 15rem;
+    left: 28rem;
+    color: white;
+}
+.circledes h2{
+    font-size: 44px;
+}
+.circledes p{
+    font-size: 16px;
+}
+.circledes button{
+    width: 10vw;
+    height: 8vh;
+    background-color: rgb(248, 220, 225);
+    color: black;
+    border: none;
+    border-radius: 6px;
+}
+.page2{
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    flex-direction: row;
+}
+.box1{
+    /* border: 2px solid black; */
+    /* background-color: red; */
+    height: 100vh;
+    width: 50%;
+    position: relative;
+}
+.box1rec{
+    background-color: rgb(234, 224, 224);
+    height: 18vh;
+    width: 40vw;
+    position: absolute;
+    top: 8rem;
+}
+.box1cir{
+    height: 26vh;
+    width: 12vw;
+    position: absolute;
+    top: 6.5rem;
+    left: 20rem;
+    border-radius: 50%;
+    background-image: url(https://thumbs.dreamstime.com/b/beautiful-woman-hugging-her-lovely-poodle-dog-puppy-pink-background-136735883.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.box1content{
+    position: absolute;
+    top: 20rem;
+    left: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.box1content h2{
+    font-size: 55px;
+
+}
+.box1content p{
+    font-size: 43px;
+}
+.box1content ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.box2{
+    width: 50%;
+    height: 110vh;
+    position: relative;
+}
+.box2card{
+    width: 22vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 13rem;
+    right: 31rem;
+    z-index: 1;
+    background-color: pink;
+    padding: 20px;
+}
+.box2card h3{
+    font-size: 28px;
+}
+.box2card p{
+    font-size: 17px;
+}
+.box2card button{
+    width: 10vw;
+    height: 8vh;
+    background-color: rgb(248, 220, 225);
+    color: black;
+    border: none;
+    border-radius: 6px;
+}
+.box2pix{
+    width: 100%;
+    height: 35vh;
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+    background-image: url(https://thumbs.dreamstime.com/b/young-women-hugging-kiss-her-lovely-pomeranian-dog-pink-flower-fields-sunset-copy-space-woman-concept-168730178.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.page3{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(245, 242, 242);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+}
+.page3top{
+    width: 18vw;
+    height: 32vh;
+    padding: 15px;
+    font-size: 19px;
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    background-color: white;
+    color: rgb(255, 193, 204);
+
+}
+.page3bott{
+    width: 100%;
+    height:60vh;
+    position: relative;
+    bottom: 0;
+    top: 15rem;
+    overflow: hidden;
+}
+.square{
+    /* border: 2px solid black; */
+    width: 40vw;
+    height: 59vh;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 10rem;
+    left: 49rem;
+    z-index: 0;
+    background-color: pink;
+
+}
+.squarepic{
+    width: 45vw;
+    height: 48vh;
+    /* border: 2px solid black; */
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/048/775/730/small/cute-shih-tzu-dog-in-pink-sweatshirt-and-sunglasses-on-pastel-background-photo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    position: absolute;
+    left: 38rem;
+    top: 0;
+    z-index: 1;
+}
+.page3h{
+    display: flex;
+    flex-direction: row;
+    gap: 26px;
+    width: 42vw;
+    height: 26vh;
+    position: absolute;
+    top: 10rem;
+    left: 17rem;
+    z-index: 2;
+
+}
+.mainh{
+    width: 9vw;
+    height: 12vw;
+    border: 1px solid black;
+    background-color: white;
+
+}
+.mainh p{
+    font-size: 25px;
+    margin-top: 110px;
+    margin-left: 15px;
 }
 
-.parentdiv svg {
+.boxh{
+    width: 6vw;
+    height: 13vh;
+    border: 1px solid black;
+    border-radius: 50%;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;   /* pushes it behind the circle/circledes content */
-    bottom: 5rem;
+    top: 1rem;
+    left: 1rem;
+    background-color: red;
 }
+/* .boxh1{
+    width: 6vw;
+    height: 13vh;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+.boxh2{
+    width: 6vw;
+    height: 13vh;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: red;
+} */
