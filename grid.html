@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<style>
+    .parent{
+        height: 140vh;
+        background-color: black;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas:
+        
+        "first second second third third"
+        "first fourth five five six"
+        "seven eight eight nine six"
+        
+        ;
+    }
+    .box{
+        /* height: 300px; */
+        background-color: blue;
+    }
+
+
+    .box:nth-child(1){
+        grid-area: first;
+        grid-column: 1/3;
+
+    }.box:nth-child(2){
+        grid-area: second;
+
+    }.box:nth-child(3){
+        grid-area:third;
+
+    }.box:nth-child(4){
+        grid-area: fourth;
+
+    }.box:nth-child(5){
+        grid-area: five;
+
+    }.box:nth-child(6){
+        grid-area: six;
+
+    }.box:nth-child(7){
+        grid-area: seven;
+
+    }.box:nth-child(8){
+        grid-area: eight;
+
+    }
+
+
+
+
+
+</style>
+<body>
+    <div class="parent">
+        <div style="background-color: red;" class="box"></div>
+        <div style="background-color: blue;" class="box"></div>
+        <div style="background-color: yellow;" class="box"></div>
+        <div style="background-color: black;" class="box"></div>
+        <div style="background-color: yellowgreen;" class="box"></div>
+        <div style="background-color: red;" class="box"></div>
+        <div style="background-color: yellowgreen;" class="box"></div>
+        <div style="background-color: red;" class="box"></div>
+        <div style="background-color: chartreuse;" class="box"></div>
+    </div>
+</body>
+</html>

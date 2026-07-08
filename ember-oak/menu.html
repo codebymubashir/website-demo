@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu — Ember & Oak</title>
+<meta name="description" content="Explore the Ember & Oak menu — wood-fired starters, mains, desserts, and hand-crafted drinks.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="brand"><span>🔥</span> Ember &amp; Oak</a>
+    <input type="checkbox" id="nav-toggle" class="nav__toggle-input">
+    <label for="nav-toggle" class="nav__toggle" aria-label="Toggle menu">
+      <span class="icon-open">☰</span><span class="icon-close">✕</span>
+    </label>
+    <ul class="nav__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html" class="is-active">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="btn btn--primary nav__cta">Reserve a Table</a>
+  </div>
+</header>
+
+<section class="page-hero container">
+  <p class="eyebrow" style="justify-content:center">The Menu</p>
+  <h1>Everything, over fire.</h1>
+  <p>Four courses, one flame. Prices in PKR — ask your server about tonight's specials, chosen fresh from the market that morning.</p>
+</section>
+
+<section class="section container" style="padding-top:0;">
+
+  <nav class="menu-nav" aria-label="Menu sections">
+    <a href="#starters">Starters</a>
+    <a href="#mains">Mains</a>
+    <a href="#desserts">Desserts</a>
+    <a href="#drinks">Drinks</a>
+  </nav>
+
+  <!-- STARTERS -->
+  <div class="course" id="starters">
+    <div class="course__head">
+      <span class="num">01</span>
+      <h2>Starters</h2>
+    </div>
+    <div class="grid grid--3">
+      <article class="dish-card">
+        <div class="dish-card__media">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=80" alt="Smoked burrata plated with charred bread">
+          <span class="dish-card__tag">Vegetarian</span>
+        </div>
+        <div class="dish-card__body">
+          <div class="dish-card__row"><h3>Smoked Burrata</h3><span class="dish-card__price">Rs 950</span></div>
+          <p>Hearth-smoked burrata, blistered cherry tomatoes, basil oil, grilled sourdough.</p>
+        </div>
+      </article>
+      <article class="dish-card">
+        <div class="dish-card__media">
+          <img src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?auto=format&fit=crop&w=700&q=80" alt="Charred flatbread starter with herbs">
+          <span class="dish-card__tag">Sharing</span>
+        </div>
+        <div class="dish-card__body">
+          <div class="dish-card__row"><h3>Fire-Charred Flatbread</h3><span class="dish-card__price">Rs 850</span></div>
+          <p>Hearth-baked flatbread, whipped garlic butter, sea salt, rosemary ash.</p>
+        </div>
+      </article>
+      <article class="dish-card">
+        <div class="dish-card__media">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=700&q=80" alt="Grilled prawn skewers appetizer">
+          <span class="dish-card__tag">Seafood</span>
+        </div>
+        <div class="dish-card__body">
+          <div class="dish-card__row"><h3>Chili-Lime Prawn Bites</h3><span class="dish-card__price">Rs 1,100</span></div>
+          <p>Grilled prawns, chili-lime glaze, pickled fresno, coriander.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <!-- MAINS -->
+  <div class="course" id="mains">
+    <div class="course__head">
+      <span class="num">02</span>
+      <h2>Mains</h2>
+    </div>
+    <div class="grid grid--3">
+      <article class="dish-card">
+        <div class="dish-card__media">
+          <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=700&q=80" alt="Oak-fired ribeye steak sliced and plated">
+          <span class="dish-card__tag">Signature</span>
+        </div>
+        <div class="dish-card__body">
+          <div class="dish-card__row"><h3>Oak-Fired Ribeye</h3><span class="dish-card__price">Rs 3,450</span></div>
+          <p>28-day dry-aged ribeye, open-flame finish, smoked salt, bone marrow butter.</p>
+        </div>
+      </article>
+      <article class="dish-card">
+        <div class="dish-card__media">
+          <img src="https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&w=700&q=80" alt="Grilled whole fish with lemon and herbs">
+          <span class="dish-card__tag">Seafood</span>
+        </div>
+        <div class="dish-card__body">
+          <div class="dish-card__row"><h3>Whole Grilled Sea Bass</h3><span class="dish-card__price">Rs 2,850</span></div>
+          <p>Charcoal-grilled whole, herb butter, charred lemon, fennel salad.</p>
+        </div>
+      </article>
+      <article class="dish-card">
+        <div class="dish-card__media">
+          <img src="https://images.unsplash.com/photo-1598103442097-8b74394b95c6?auto=format&fit=crop&w=700&q=80" alt="Smoked half chicken with roasted vegetables">
+          <span class="dish-card__tag">House Favourite</span>
+        </div>
+        <div class="dish-card__body">
+          <div class="dish-card__row"><h3>Smoked Half Chicken</h3><span class="dish-card__price">Rs 1,950</span></div>
+          <p>Brined and smoked over oak, roasted root vegetables, jus.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <!-- DESSERTS -->
+  <div class="course" id="desserts">
+    <div class="course__head">
+      <span class="num">03</span>
+      <h2>Desserts</h2>
+    </div>
+    <div class="grid grid--3">
+      <article class="dish-card">
+        <div class="dish-card__media">
+          <img src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?auto=format&fit=crop&w=700&q=80" alt="Chocolate lava cake dessert plated">
+          <span class="dish-card__tag">Warm</span>
+        </div>
+        <div class="dish-card__body">
+          <div class="dish-card__row"><h3>Smoked Chocolate Torte</h3><span class="dish-card__price">Rs 750</span></div>
+          <p>Dark chocolate torte finished with a hint of applewood smoke, sea salt.</p>
+        </div>
+      </article>
+      <article class="dish-card">
+        <div class="dish-card__media">
+          <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=80" alt="Grilled peach dessert with cream">
+          <span class="dish-card__tag">Seasonal</span>
+        </div>
+        <div class="dish-card__body">
+          <div class="dish-card__row"><h3>Charred Peach &amp; Cream</h3><span class="dish-card__price">Rs 650</span></div>
+          <p>Fire-grilled peaches, mascarpone cream, honey, toasted pistachio.</p>
+        </div>
+      </article>
+      <article class="dish-card">
+        <div class="dish-card__media">
+          <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=700&q=80" alt="Creme brulee dessert with caramelized top">
+          <span class="dish-card__tag">Classic</span>
+        </div>
+        <div class="dish-card__body">
+          <div class="dish-card__row"><h3>Oak-Smoked Crème Brûlée</h3><span class="dish-card__price">Rs 700</span></div>
+          <p>Vanilla custard, oak-smoked infusion, brûléed sugar crust.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <!-- DRINKS -->
+  <div class="course" id="drinks">
+    <div class="course__head">
+      <span class="num">04</span>
+      <h2>Drinks</h2>
+    </div>
+    <div class="grid grid--3">
+      <article class="dish-card">
+        <div class="dish-card__media">
+          <img src="https://images.unsplash.com/photo-1551538827-9c037cb4f32a?auto=format&fit=crop&w=700&q=80" alt="Smoked old fashioned cocktail with a large ice cube">
+          <span class="dish-card__tag">Signature</span>
+        </div>
+        <div class="dish-card__body">
+          <div class="dish-card__row"><h3>Smoked Old Fashioned</h3><span class="dish-card__price">Rs 1,400</span></div>
+          <p>Charred oak chips, bourbon, bitters, orange peel — served under smoke.</p>
+        </div>
+      </article>
+      <article class="dish-card">
+        <div class="dish-card__media">
+          <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=700&q=80" alt="Fresh citrus mocktail in a tall glass">
+          <span class="dish-card__tag">Mocktail</span>
+        </div>
+        <div class="dish-card__body">
+          <div class="dish-card__row"><h3>Charred Citrus Cooler</h3><span class="dish-card__price">Rs 650</span></div>
+          <p>Grilled orange &amp; lime, soda, mint, a touch of ginger.</p>
+        </div>
+      </article>
+      <article class="dish-card">
+        <div class="dish-card__media">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=700&q=80" alt="Craft beer in a glass on a wooden table">
+          <span class="dish-card__tag">On Tap</span>
+        </div>
+        <div class="dish-card__body">
+          <div class="dish-card__row"><h3>Local Craft Ale</h3><span class="dish-card__price">Rs 550</span></div>
+          <p>Rotating regional ales, chosen to pair with the smoke on your plate.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+
+</section>
+
+<section class="container">
+  <div class="cta-band">
+    <div class="cta-band__copy">
+      <h2>Ready to taste it?</h2>
+      <p>Reserve your table and let the grill do the talking.</p>
+    </div>
+    <div class="cta-band__actions">
+      <a href="contact.html" class="btn btn--primary">Reserve a Table</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer container">
+  <div class="footer__grid">
+    <div class="footer__brand">
+      <a href="index.html" class="brand"><span>🔥</span> Ember &amp; Oak</a>
+      <p>A wood-fired grill house serving honest, seasonal food since 2014. Every dish leaves our kitchen touched by real oak flame.</p>
+      <div class="footer__social">
+        <a href="#" aria-label="Instagram">📷</a>
+        <a href="#" aria-label="Facebook">📘</a>
+        <a href="#" aria-label="TikTok">🎵</a>
+      </div>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Visit</h4>
+      <ul>
+        <li><a href="contact.html">Location &amp; Hours</a></li>
+        <li><a href="contact.html">Reservations</a></li>
+        <li><a href="contact.html">Private Events</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:+924100000000">+92 41 000 0000</a></li>
+        <li><a href="mailto:hello@emberandoak.com">hello@emberandoak.com</a></li>
+        <li><a href="contact.html">Model Town, Bahawalpur</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© 2026 Ember &amp; Oak Grill House. All rights reserved.</span>
+    <span>Built with fire, oak &amp; care.</span>
+  </div>
+</footer>
+
+</body>
+</html>
