@@ -39,7 +39,7 @@
 // arr2.forEach((students)=>{
 //     console.log(students)
 
-// })
+// })  
 // console.log(arr2)
 
 
@@ -207,6 +207,15 @@
 // let arr9 = ["ali","ahmed","hmmad","abdullah"]
 // arr9.splice(1, 1, "Ahmed");
 // console.log(arr9);
+
+
+
+//=============OBJECT==========
+
+let student = {
+    name:"abdullah",
+    age:15,
+}
 
 
 
