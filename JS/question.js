@@ -1,39 +1,6 @@
-// //strings in js
+// ===================   QUESTIONS  =====================
 
-
-// let name = "mubashir"
-// value = "new"
-// // console.log(name + value +"hello"
-//  console.log(`hello my name is ${name} and my value is ${value}`)
-
-
-//  const nameId = new String('mubashirimran');
-
-
-
-//  //arrays topic
-
-//  let arr = [0,1,2,3,4,5, 'hello']
-//  console.log(arr[1])
-
-
-//  arr.push(6)
-//  arr.push(8)
-//  arr.pop()
-//  console.log(arr)
-
-
-// let arr1 = arr.slice(0,5)
-// console.log(arr1)
-
-// arr.splice(2,5,"helloworld")
-// console.log(arr)
-
-
-
-//===================   QUESTIONS  =====================
-
-//question no 1
+// question no 1
 // //Create an array of student names and print each
 // let arr2 = ["ahmed","ali","hmmad","akbar","ahsan","mubashir"];
 // arr2.forEach((students)=>{
@@ -52,8 +19,8 @@
 
 
 
-//QUESTION 3
-//filter numbers greater than 5 
+// QUESTION 3
+// filter numbers greater than 5 
 
 // let arr4 = [1,2,3,4,5,6,7,8,9,10]
 // let newNums = arr4.filter((num)=>{
@@ -62,8 +29,8 @@
 // console.log(newNums)
 
 
-//QUESTION 4
-//fILTER even number from an array
+// QUESTION 4
+// fILTER even number from an array
 
 // let arr5 = [1,2,3,4,5,6,7,8,9,10]
 // let evenNums = arr5.filter((nums)=>{
@@ -72,8 +39,8 @@
 // console.log(evenNums)
 
 
-//QUESTION 5
-//Write a function using filter() that returns only the names (not full objects) of students who scored 60 or above.
+// QUESTION 5
+// Write a function using filter() that returns only the names (not full objects) of students who scored 60 or above.
 // let students = [
 //   { name: "Ali", marks: 85 },
 //   { name: "Sara", marks: 42 },
@@ -95,8 +62,8 @@
 // console.log(pricesGst)
 
 
-//QUESTION 7
-//reduce method
+// QUESTION 7
+// reduce method
 
 // let arr6 = [1,2,3,4]
 // let myTotal = arr6.reduce((acc,cu)=>{
@@ -107,7 +74,7 @@
 
 
 
-//Question 8
+// Question 8
 // //reduce salaries to total payroll
 
 // let arr7 = [
@@ -124,8 +91,8 @@
 // console.log(totalPayroll)
 
 
-//QUESTION 9
-//You have an array of orders, each with a status field ("delivered", "pending", "cancelled") and an amount. Write code to calculate the total revenue from only the delivered orders.
+// QUESTION 9
+// You have an array of orders, each with a status field ("delivered", "pending", "cancelled") and an amount. Write code to calculate the total revenue from only the delivered orders.
 
 // let arr8 = [
 //   { orders:"pending", amount: 500 },
@@ -143,22 +110,22 @@
 // console.log(orderTotal)
 
 
-//QUESTION 9
-//SORT ARRAY OF AGES IN ACCESSNDING ORDER
+// QUESTION 9
+// SORT ARRAY OF AGES IN ACCESSNDING ORDER
 
 // let arr9 = [12,9,33,6,55]
 // let sort = arr9.sort((a,b)=>a-b)
 // console.log(sort)
 
 
-//QUESTION 10
+// QUESTION 10
 // //WRITE A FUNCTION TO REVERSE AN ARRAY 
 // let arr9 = [2,4,5,6,7,8]
 // let rev = arr9.reverse()
 // console.log(rev)
 
-//QUESTIONS 11
-//Create an array of employee names and print each one with "Welcome, " before it.
+// QUESTIONS 11
+// Create an array of employee names and print each one with "Welcome, " before it.
 // let arr9 = ["ahmed","ali","ammar","zohaib"]
 // arr9.forEach((students)=>{
 //     console.log("welcome", students)
@@ -166,8 +133,8 @@
 // console.log(arr9)
 
 
-//QUESTION 12
-//Filter out all numbers greater than 50 from an array of exam scores.
+// QUESTION 12
+// Filter out all numbers greater than 50 from an array of exam scores.
 // let arr9 = [22,55,33,66,77,99]
 // let totalMarks = arr9.filter((marks)=>{
 //     return marks >= 55
@@ -176,7 +143,7 @@
 // console.log(totalMarks)
 
 
-//QUESTION 13
+// QUESTION 13
 // Use filter() + map() together: from an array of student objects, get the names of only those students whose age is 18 or above.
 
 // let arr9 =[
@@ -193,31 +160,18 @@
 
 
 
-//QUESTION 14
-//From an array of numbers [10, 20, 30, 40, 50], extract the first 3 numbers into a new array without changing the original.
+// QUESTION 14
+// From an array of numbers [10, 20, 30, 40, 50], extract the first 3 numbers into a new array without changing the original.
 
 // let arr9 = [10,20,30,40,50]
 // let newArr = arr9.slice(0, 3);
 // console.log(arr9);
 // console.log(newArr);
 
-//QUESTION 15
-//From an array of names, replace the element at index 1 with a new name using splice().
+// QUESTION 15
+// From an array of names, replace the element at index 1 with a new name using splice().
 
 // let arr9 = ["ali","ahmed","hmmad","abdullah"]
 // arr9.splice(1, 1, "Ahmed");
 // console.log(arr9);
-
-
-
-//=============OBJECT==========
-
-let student = {
-    name:"abdullah",
-    age:15,
-}
-
-
-
-
 
