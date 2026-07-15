@@ -175,3 +175,20 @@
 // arr9.splice(1, 1, "Ahmed");
 // console.log(arr9);
 
+
+
+// Check if a number is even or odd
+// Find the largest of three numbers
+// Find the smallest of three numbers
+// Check if a number is positive, negative, or zero
+// Calculate the sum of digits of a number
+// Reverse a number (e.g., 123 → 321)
+// Check if a number is a palindrome (e.g., 121)
+// Check if a number is prime
+// Print all prime numbers up to N
+// Find the factorial of a number 
+// Generate the Fibonacci series up to N terms
+// Check if a number is an Armstrong number (e.g., 153)
+// Find the GCD (HCF) of two numbers
+// Find the LCM of two numbers
+// Swap two numbers without using a third variable
