@@ -178,6 +178,7 @@
 
 
 // Check if a number is even or odd
+
 // Find the largest of three numbers
 // Find the smallest of three numbers
 // Check if a number is positive, negative, or zero
@@ -192,3 +193,55 @@
 // Find the GCD (HCF) of two numbers
 // Find the LCM of two numbers
 // Swap two numbers without using a third variable
+
+
+
+
+
+
+
+
+
+
+//========================FOR LOOP =================================//
+// 1..print numbers from 1 to 10
+
+// for(let i=1;i<=10;i++){
+//     console.log(i)
+
+// }
+
+//print even numbers between 1 and 20
+// for(let i =1; i<=20; i++){
+//     if(i%2==0){
+//         console.log(i)
+//     }
+// }
+
+//Print odd numbers between 1 and 20. 
+// for(let i =1; i<=20; i++){
+//     if(i%2!=0){
+//         console.log(i)
+//     }
+// }
+
+
+// Print numbers from 10 down to 1
+// for(let i=10; i>=1; i--){
+//     console.log(i)
+// }
+
+// Print the multiplication table of 5. 
+
+// let num = 5;
+// for(let i=1; i<=10; i++){
+//     console.log(`${num}x${i}=${num*i}`)
+// }
+
+// Print all numbers divisible by 3 from 1 to 30. 
+// for(let i=1; i<=30;i++){
+//     if(i%3==0){
+//         console.log(i)
+//     }
+// }
+

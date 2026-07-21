@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rangeen — Contact the studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="logo">Rangeen</div>
+  <nav class="nav-links">
+    <a href="#">Shop</a>
+    <a href="#">Our story</a>
+    <a href="#" class="current">Contact</a>
+  </nav>
+</header>
+
+<section class="hero-contact">
+  <div class="hero-grid">
+
+    <div class="hero-intro">
+      <div class="eyebrow">Get in touch</div>
+      <h1>Questions about<br>an order, or just<br><em>want to say hi?</em></h1>
+      <p class="hero-desc">Pick what you're reaching out about and we'll route it to the right person on the floor — no ticket numbers, just a real reply.</p>
+
+      <div class="info-list">
+
+        <div class="info-row" data-topic="order">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></svg>
+          </div>
+          <div class="info-text">
+            <div class="label">Order help</div>
+            <div class="value">orders@rangeen.studio</div>
+          </div>
+        </div>
+
+        <div class="info-row" data-topic="wholesale">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-6h6v6"/></svg>
+          </div>
+          <div class="info-text">
+            <div class="label">Wholesale &amp; stockists</div>
+            <div class="value">trade@rangeen.studio</div>
+          </div>
+        </div>
+
+        <div class="info-row" data-topic="press">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-7-7 18-2.5-7.5L3 11z"/></svg>
+          </div>
+          <div class="info-text">
+            <div class="label">Press &amp; collaborations</div>
+            <div class="value">press@rangeen.studio</div>
+          </div>
+        </div>
+
+        <div class="info-row" data-topic="general">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5 8.6 8.6 0 0 1-3.4-.7L3 21l1.7-5.1A8.5 8.5 0 1 1 21 11.5z"/></svg>
+          </div>
+          <div class="info-text">
+            <div class="label">Everything else</div>
+            <div class="value">hello@rangeen.studio</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="contact-card">
+      <h2>Send a message</h2>
+      <p class="sub">Choose a topic — the form below adjusts to it.</p>
+
+      <div class="chip-row">
+        <button class="chip active" data-topic="order" type="button">Order help</button>
+        <button class="chip" data-topic="wholesale" type="button">Wholesale</button>
+        <button class="chip" data-topic="press" type="button">Press</button>
+        <button class="chip" data-topic="general" type="button">General</button>
+      </div>
+
+      <div class="route-note">
+        <span class="route-dot"></span>
+        <span id="routeText">Sent to <strong>orders@rangeen.studio</strong> — usual reply time is under a day.</span>
+      </div>
+
+      <form id="contactForm" onsubmit="return false;">
+        <div class="field">
+          <input type="text" placeholder=" " required>
+          <label>Full name</label>
+        </div>
+        <div class="field">
+          <input type="email" placeholder=" " required>
+          <label>Email address</label>
+        </div>
+        <div class="field">
+          <input type="text" id="orderField" placeholder=" ">
+          <label id="orderFieldLabel">Order number (optional)</label>
+        </div>
+        <div class="field">
+          <textarea id="messageBox" placeholder=" " maxlength="400" required></textarea>
+          <label>Your message</label>
+        </div>
+        <div class="char-count"><span id="charCount">0</span>/400</div>
+
+        <button class="btn-primary" type="submit">Send message</button>
+        <div class="form-status" id="formStatus"></div>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<div class="studio-strip">
+  <div class="strip-label">Threads, dyed and woven at our studio floor — every message reaches someone who's actually seen the fabric.</div>
+  <div class="swatch-row">
+    <div class="swatch" style="background:#d9a441;"></div>
+    <div class="swatch" style="background:#2f6f5e;"></div>
+    <div class="swatch" style="background:#7a2e2e;"></div>
+    <div class="swatch" style="background:#efe7d8;"></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <span>© 2026 Rangeen Studio</span>
+  <span>Bahawalpur, Punjab · Mon–Sat, 10am–7pm</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
