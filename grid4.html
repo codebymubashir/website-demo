@@ -7,21 +7,76 @@
     <link rel="stylesheet" href="./grid4.css">
 </head>
 <body>
+<form id="registerForm">
+  <input type="text" id="username" placeholder="Username" required>
+  <input type="email" id="email" placeholder="Email" required>
+  <input type="password" id="password" placeholder="Password" required>
+  <button type="submit">Register</button>
+</form>
 
-<div class="container">
-    <div class="box blue"></div>
-    <div class="box cyan"></div>
-    <div class="box yellow"></div>
-    <div class="box green"></div>
-    <div class="box pink"></div>
-    <div class="box orange"></div>
-    <div class="box blue"></div>
-    <div class="box cyan"></div>
-    <div class="box yellow"></div>
-    <div class="box green"></div>
-    <div class="box pink"></div>
-    <div class="box orange"></div>
-</div>
+
+
+
+
+<script>
+
+    document.getElementById("registerForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // page reload rokne ke liye
+
+    let username = document.getElementById("username").value;
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+
+    // Naya user object banao
+    let newUser = {
+      username: username,
+      email: email,
+      password: password
+    };
+
+    // Pehle se koi users hain kya, check karo
+    let users = JSON.parse(localStorage.getItem("users")) || [];
+
+    // Naya user array mein add karo
+    users.push(newUser);
+
+    // Wapas localStorage mein save karo (array ko string bana ke)
+    localStorage.setItem("users", JSON.stringify(users));
+
+    alert("Registration successful!");
+    window.location.href = "login.html"; // login page pe bhej do
+  });
+    //  let today = new Date().getDay(); // 0-6
+    // let dayName;
+
+    // switch (today) {
+    //   case 0:
+    //     dayName = "Sunday";
+    //     break;
+    //   case 1:
+    //     dayName = "Monday";
+    //     break;
+    //   case 2:
+    //     dayName = "Tuesday";
+    //     break;
+    //   case 3:
+    //     dayName = "Wednesday";
+    //     break;
+    //   case 4:
+    //     dayName = "Thursday";
+    //     break;
+    //   case 5:
+    //     dayName = "Friday";
+    //     break;
+    //   case 6:
+    //     dayName = "Saturday";
+    //     break;
+    //   default:
+    //     dayName = "Unknown";
+    // }
+
+    // document.getElementById("dayDisplay").innerText = "Today is " + dayName;
+</script>
 
 </body>
 </html>
